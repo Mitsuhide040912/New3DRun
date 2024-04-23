@@ -1,12 +1,13 @@
 #pragma once
 #include "Engine/GameObject.h"
 #include "Engine/BoxCollider.h"
-class Player :
+class Enemy :
     public GameObject
 {
     int hModel_;
+    double speed_=0.50f;
 public:
-    Player(GameObject* parent);
+    Enemy(GameObject* parent);
     void Initialize()override;
     void Update()override;
     void Draw()override;
