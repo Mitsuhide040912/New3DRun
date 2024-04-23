@@ -1,4 +1,5 @@
 #include "Enemy.h"
+#include "Stage.h"
 #include "Engine/Model.h"
 #include "Engine/BoxCollider.h"
 Enemy::Enemy(GameObject* parent)
@@ -35,6 +36,5 @@ void Enemy::Release()
 
 void Enemy::OnCollision(GameObject* pTarget)
 {
-
 	transform_.position_ = (XMFLOAT3{ 0,0,50.0 });
 }
