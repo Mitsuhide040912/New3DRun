@@ -12,11 +12,12 @@ void PlayScene::Initialize()
 {
 	Instantiate<Stage>(this);
 	Instantiate<Player>(this);
-	Instantiate<Enemy>(this);
+	
 }
 
 void PlayScene::Update()
 {
+	Instantiate<Enemy>(this);
 }
 
 void PlayScene::Draw()
@@ -26,3 +27,7 @@ void PlayScene::Draw()
 void PlayScene::Release()
 {
 }
+
+
+
+

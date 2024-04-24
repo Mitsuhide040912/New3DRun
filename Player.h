@@ -5,6 +5,7 @@ class Player :
     public GameObject
 {
     int hModel_;
+    bool IsAlive_;
 public:
     Player(GameObject* parent);
     void Initialize()override;

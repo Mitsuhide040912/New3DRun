@@ -10,8 +10,10 @@ Player::Player(GameObject* parent)
 
 void Player::Initialize()
 {
-	hModel_ = Model::Load("Model\\Player1.fbx");
+	hModel_ = Model::Load("Model\\Enemy.fbx");
 	assert(hModel_ >= 0);
+
+	transform_.rotate_.y = 90;
 
 	BoxCollider* colision = new BoxCollider(XMFLOAT3(0, 0, 0), XMFLOAT3(1.0, 1.0, 1.0));
 	AddCollider(colision);
