@@ -19,7 +19,7 @@ void Stage::Initialize()
 	BoxCollider* collision = new BoxCollider(XMFLOAT3(0, 0, -20.0), XMFLOAT3(10, 10, 3.5));
 	AddCollider(collision);
 
-	Camera::SetPosition(XMFLOAT3(0.4, 3.5, -10.0));
+	Camera::SetPosition(XMFLOAT3(0.4, 3.5, -5.0));
 	Camera::SetTarget(XMFLOAT3(0.4, -0.5, 10));
 	//Camera::SetPosition({ 0.5,2.5,-2.0 });
 	//Camera::SetTarget({ 0.5,2.0,0 });

@@ -7,9 +7,14 @@ class Enemy :
     public GameObject
 {
     int hModel_;
-    double speed_=0.60f;
-    
-    
+    int y = 0;
+    int z = 0;
+    double speed_= 0.5;
+    //int Rand = rand() % 3;
+    int posZ_;
+    float space_Z = 5.5f;
+    const int NUM_OBJECTS = 15;
+    int Lastlane_ = -1;
    
 public:
     Enemy(GameObject* parent);
@@ -19,8 +24,5 @@ public:
     void Release()override;
 
     void OnCollision(GameObject* pTarget)override;
-
-    
-
 };
 
