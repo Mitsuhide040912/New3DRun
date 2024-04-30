@@ -17,7 +17,7 @@ void Enemy::Initialize()
 
 	transform_.position_ = XMFLOAT3(0.0,0.0, 50.0);
 
-	//transform_.position_.x = (rand() % 3 - 1) % 3;
+    transform_.position_.x = (rand() % 3 - 1) % 3;
 	//Lastlane_ = Rand;
 	
 	
