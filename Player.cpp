@@ -13,6 +13,8 @@ void Player::Initialize()
 	hModel_ = Model::Load("Model\\Enemy.fbx");
 	assert(hModel_ >= 0);
 
+	transform_.scale_ = XMFLOAT3(0.5f, 0.5f, 0.5f);
+
 	transform_.rotate_.y = 90;
 
 	BoxCollider* colision = new BoxCollider(XMFLOAT3(0, 0, 0), XMFLOAT3(1.0, 1.0, 1.0));
@@ -28,7 +30,7 @@ void Player::Update()
 	}
 	else if (Input::IsKey(DIK_RIGHT))
 	{
-		transform_.position_.x = 1;
+		transform_.position_.x =  1;
 	}
 	else
 	{

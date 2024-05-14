@@ -25,8 +25,8 @@ void Enemy::Initialize()
 	BoxCollider* collision = new BoxCollider(XMFLOAT3(0, 0, 0), XMFLOAT3(1.0, 1.0, 1.0));
 	
 	AddCollider(collision);
-	
-	
+
+
 }
 
 void Enemy::Update()

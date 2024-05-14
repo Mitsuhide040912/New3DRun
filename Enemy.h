@@ -9,7 +9,7 @@ class Enemy :
     int hModel_;
     int y = 0;
     int z = 0;
-    double speed_= 0.5;
+    double speed_= 0.9;
     //int Rand = rand() % 3;
     int posZ_;
     float space_Z = 5.5f;
